@@ -1,0 +1,197 @@
+body {
+    background-color: rgb(20, 59, 118);
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+#contenido {
+    width: 75%;
+    height: 760px;
+    background-color: rgb(3, 3, 31);
+    color: rgb(15, 239, 255);
+    padding-left: 80px;
+    padding-top: 90px;
+    border-radius: 15px;
+    border: 3px solid rgb(124, 102, 211);
+    box-shadow: 0 0 15px rgba(249, 255, 255, 0.946),
+                9px 32px 40px rgba(24, 132, 88, 0.946),
+                -9px -32px 40px rgba(57, 104, 180, 0.946),
+                inset 0 0 12px rgba(249, 255, 255, 0.946),
+                inset 9px 3px 20px rgba(57, 104, 180, 0.946),
+                inset -9px -3px 20px rgba(24, 132, 88, 0.946);
+}
+
+header {
+    background-color: rgba(52, 52, 136, 0.5);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 25%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 5px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    width: 700px;
+    border: 6px solid rgb(13, 4, 49);
+    box-shadow: -1px -1px 10px rgba(249, 255, 255, 0.946),
+            -12px -15px 20px rgba(57, 104, 180, 0.344);
+}
+
+li {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+#visor {
+    width: 600px;
+    height: 350px;
+    background-color: silver;
+    position: absolute;
+    overflow: hidden;
+    margin-left: 50px;
+    margin-top: 150px;
+    border: 6px solid rgba(10, 34, 81, 0.948);
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(249, 255, 255, 0.946),
+                9px 25px 60px rgba(57, 104, 180, 0.946),
+                -9px -25px 60px rgba(24, 132, 88, 0.946);
+}
+
+#sky {
+    width: 1200px;
+    height: 400px;
+    position: relative;
+
+    animation-name: sky;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    -moz-aimation-name: sky;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+
+    -webkit-animation-name: sky;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+@keyframes sky {
+    from{left: 0px;}
+    to{left: -600px;}
+}
+
+@-o-keyframes sky {
+    from{left: 0px;}
+    to{left: -600px;}
+}
+
+@-moz-keyframes sky {
+    from{left: 0px;}
+    to{left: -600px;}
+}
+
+@-webkit-keyframes sky {
+    from{left: 0px;}
+    to{left: -600px;}
+}
+
+#plain {
+    position: absolute;
+    top: 60px;
+    left: 140px;
+    width: 130px;
+}
+
+#panel {
+    margin-top: -100px;
+}
+
+h3 {
+    font-size: 30px;
+    margin-left: 860px;
+    font-family: 'Courier New';
+}
+
+#botones {
+    color: aqua;
+    width: 400px;
+    padding: 30px;
+    background-color: /*rgb(22, 119, 126)*/ rgb(0, 21, 55);
+    margin-left: 800px;
+    border: 3px solid rgb(11, 80, 85);
+    border-top-left-radius: 46px;
+    border-top-right-radius: 22px;
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 46px;
+    box-shadow: 0 3px 20px rgba(249, 255, 255, 0.946);
+}
+
+input {
+    width: 27%;
+    height: 50px;
+    border-radius: 12px;
+    border-style: none;
+    padding: 9px;
+    box-shadow: 1px 1px 6px #fee;
+    border: 1px solid #ccc;
+    margin: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.848);
+    background-color: rgb(19, 164, 174);
+}
+
+input:hover {
+    box-shadow: 0 0 40px rgba(63, 207, 209, 0.614);
+}
+
+#b {
+    font-size: 25px;
+    padding: 10px;
+}
+
+#precisa {
+    color: aqua;
+    width: 400px;
+    padding: 30px;
+    background-color: /*rgb(22, 119, 126)*/ rgb(0, 21, 55);
+    margin-left: 800px;
+    border: 3px solid rgb(11, 80, 85);
+    border-top-left-radius: 46px;
+    border-top-right-radius: 22px;
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 46px;
+    box-shadow: 0 3px 20px rgba(249, 255, 255, 0.946);
+}
+
+select {
+    width: 40%;
+    height: 50px;
+    text-align: center;
+    border-radius: 12px;
+    border-style: none;
+    padding: 9px;
+    box-shadow: 1px 1px 6px #fee;
+    border: 1px solid #ccc;
+    margin: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.848);
+    background-color: rgb(19, 164, 174);
+    appearance: none;
+}
+
+select:hover {
+    box-shadow: 0 0 40px rgba(63, 207, 209, 0.614);
+}
+
+option {
+    background-color: rgba(23, 103, 110, 0.73);
+    color: rgba(0, 0, 0, 0.848);
+    font-weight: bold;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script type="text/javascript" src="./main.js"></script>
+    <title>Ejercicio-Feedback</title>
+</head>
+<body>
+    <div id="contenido">
+        <header>
+            <h1>Ejercicio Feedback</h1>
+            <nav>
+                <ul>
+                    <li>Animación - Avión Volando</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <article>
+                    <div id="visor">
+                        <img id="sky" src="./img/cielo.jpg" alt="sky">
+                        <img id="plain" src="./img/plane.png" alt="plane">
+                    </div>
+                </article>
+            </section>
+            <section>
+                <div id="panel">
+                    <article>
+                        <h3>Panel de control</h3>
+                        <p id="botones">
+                            <input type="button" name="stop" value="Stop" onclick="parar()">
+                            <input type="button" name="reanudar" value="Reanudar" onclick="seguir()">
+                            <br><br>
+                            <b id="b">Selecciona la velocidad:</b>
+                            <br>
+                            <input type="button" name="rapida" value="Máxima" onclick="rapida()">
+                            <input type="button" name="normal" value="Normal" onclick="normal()">
+                            <input type="button" name="lenta" value="Mínima" onclick="lenta()">
+                        </p>
+                        <div id="precisa">
+                            <p><b id="b">Selección más precisa de velocidad:</b></p>
+                            <form>
+                                <select id="vel" onchange="velocidad()">
+                                    <option value="10" >Muy Lenta</option>
+                                    <option value="8">Lenta</option>
+                                    <option value="5" selected="selected">Normal</option>
+                                    <option value="3">Rápida</option>
+                                    <option value="1">Muy Rápida</option>
+                                </select>
+                            </form>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
